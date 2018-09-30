@@ -26,7 +26,7 @@
 
 
     <div class="bht">
-        Boston Homemade Trade 
+        Boston Homemade Trade
     </div>
 
     <div class="bhtlogo">
@@ -67,9 +67,9 @@
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a href="#">Link 12</a>
+                <a href="#">Link 23</a>
+                <a href="#">Link 33</a>
             </div>
         </div> 
     </div>
