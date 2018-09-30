@@ -136,7 +136,7 @@ public class DataDAO {
                 return null;
             }
 
-            PreparedStatement insertTrader = conn.prepareStatement("insert into trader values(?,?,?,?,?,?,?,?)",PreparedStatement.RETURN_GENERATED_KEYS);
+            PreparedStatement insertTrader = conn.prepareStatement("insert into trader(username,firstname,lastname,birthdate,password,neighborhood,image,email) values(?,?,?,?,?,?,?,?)",PreparedStatement.RETURN_GENERATED_KEYS);
             insertTrader.setString(1,t.getFirstname()+t.getLastname());
             insertTrader.setString(2,t.getFirstname());
             insertTrader.setString(3,t.getLastname());
