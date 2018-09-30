@@ -45,6 +45,10 @@ public class homePageServlet extends HttpServlet {
         for(Item i : searchresults){
             System.out.println(i);
         }   
+        request.getSession().setAttribute("searchresults",searchresults);
+        request.getRequestDispatcher("Food.jsp").forward(request,response);
+        
+        
         
         
     }
