@@ -30,21 +30,8 @@ hr {
     margin-bottom: 25px;
 }
 
-/* Set a style for all buttons */
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-}
 
-button:hover {
-    opacity:1;
-}
+
 
 /* Extra styles for the cancel button */
 .cancelbtn {
@@ -104,18 +91,7 @@ button:hover {
   font-size: 18px;
 }
 
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
+
 
 a {
   text-decoration: none;
@@ -123,9 +99,6 @@ a {
   color: black;
 }
 
-button:hover, a:hover {
-  opacity: 0.7;
-}
 
 
 </style>

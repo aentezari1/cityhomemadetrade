@@ -10,15 +10,7 @@
 
 <style type="text/css">
 
-.andreecard {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 200px;
-  max-height: 100px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  float:left;
-}
+
 
 table, th, td {
     border: 1px solid black;
@@ -30,13 +22,13 @@ table, th, td {
 	position:absolute;
 	float:right;
 	left: 5%;
-	top:20%;
+	top:30%;
 }
 
 .ratingtable {
 	position:absolute;
 	left: 50%;
-	top:20%;
+	top:30%;
 }
 
 .foodrating {
@@ -51,6 +43,50 @@ table, th, td {
 	height: 100px;
 }
 
+.proposebtn {
+        position:absolute;
+	float:right;
+	left: 10%;
+	top:65%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 </style>
 
 <div class="bht">
@@ -68,6 +104,14 @@ Boston Homemade Trade
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" 
  class="close" title="Close Modal">&times;</span>
+ 
+ <!-- Place Calendar here -->
+ 
+ 
+ 
+ 
+ 
+ 
 
   <!-- Modal Content -->
   <form class="modal-content animate" action="/action_page.php">
@@ -250,8 +294,21 @@ Friendliness
 
 	</table>
 	
+<!-- Trigger/Open The Modal -->
+<div class="proposebtn">
+<button id="propose">Propose a Trade</button>
 
-	
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+</div>	
 </body>
 
 
@@ -261,6 +318,32 @@ var modal = document.getElementById('id01');
 
 // When the user clicks anywhere outside of the modal, close it
  window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("propose");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
