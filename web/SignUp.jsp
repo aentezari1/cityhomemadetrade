@@ -60,7 +60,7 @@ hr {
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
-    .cancelbtn, .signupbtn {
+    .cancelbtn1, .signupbtn1 {
        width: 100%;
     }
 }
@@ -96,7 +96,7 @@ Boston Homemade Trade
   <!-- Modal Content -->
   <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      <img src="images/BHTB.jpg" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
@@ -115,7 +115,7 @@ Boston Homemade Trade
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn1">Cancel</button>
       <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
   </form>
@@ -142,6 +142,7 @@ Boston Homemade Trade
   <a href="Food.jsp">Community</a>
   <a href="contactus.jsp">Contact</a>
   <a href="Signup.jsp">Join the Community</a>
+  <a href="map.jsp">Map</a>
   </div>
 
 
@@ -291,8 +292,8 @@ Boston Homemade Trade
     <p>By creating an account you agree to our <a href="termsandconditions.jsp" style="color:dodgerblue">Terms & Conditions</a>.</p>
 
     <div class="clearfix">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <button onclick="setTimeout(myFunction, 2000);">Sign Up</button>
+      <button class="cancelbtn1">Cancel</button>
+      <button class="signupbtn1">Sign Up</button>
     </div>
   </div>
 </form>

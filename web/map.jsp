@@ -1,20 +1,48 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
+<%@page contentType="text/html" pageEncoding="UTF-8" session="false" %>
 <!doctype html>
 <html>
 
+<head>
+
+<!-- Does this link have to go within the style tags? -->
 <link rel="stylesheet" type="text/css" href="bcascade.css" />
 
 <style type="text/css">
 
 
+.submit {
+	margin: auto;
+    padding: 10px;
+	
+}
+
+
+table, th, tr {
+    border: 1px solid black;
+	text-align: left;
+	top: 5px;
+}
+
+
+
+
+
+
+<!-- still not really understanding how the divs work, I have been changing this 'neighborhood' and 'dietary' div for the past 15 minutes and
+don't. I want them (for now) to be left align from the top, -->	
+	
 </style>
 
+
+
 <div class="bht">
-
 Boston Homemade Trade 
-
 </div>
+
+
+
 
 <!-- Button to open the modal login form -->
 <div class="login">
@@ -54,14 +82,12 @@ Boston Homemade Trade
 </div>
 
 
-
-
+<div class="bhtlogo">
+</div>
 
 <br>
 
-<head>
 
-    
 
 <div class="navbar">
   <a href="Boston1.jsp">Home</a>
@@ -81,34 +107,14 @@ Boston Homemade Trade
   <a href="Food.jsp">Community</a>
   <a href="contactus.jsp">Contact</a>
   <a href="SignUp.jsp">Join the Community</a>
-  <a href="map.jsp">Map</a>
   </div>
+  
 
-</head>
-<body>
-
-<h2> About </h2>
-<hr>
-<p>Boston Homemade Trade is a trading platform that allows user within your community to trade homemade goods and recipes with one another. Too many of us have a love for 
-creating and sharing our homemade creations with one another, but currently there isn't any platform that exists that allows us to share foods and recipes with one another
-besides pictures on social media. This website allows users to trade homemade dishes like pie, cake, bread, and other homemade creations, while getting to know other
-like minded individuals in their neighborhood. We hope you use this site to meet others that are similar to you and learn other foods that are inspiring to make.</p>
+		
 </body>
 
 
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
- window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
- </script>
-
-
-
+ 
 </html>
+
 

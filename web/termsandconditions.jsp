@@ -53,6 +53,7 @@ Boston Homemade Trade
   <a href="Food.html">Community</a>
   <a href="contactus.html">Contact</a>
   <a href="Signup.html">Join the Community</a>
+  <a href="map.jsp">Map</a>
   
   <!-- Need to go through and make sure all the urls match with the navigation bar designations -->
  

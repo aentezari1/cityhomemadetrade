@@ -116,7 +116,7 @@ Boston Homemade Trade
   <!-- Modal Content -->
   <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      <img src="images/BHTB.jpg" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
@@ -162,6 +162,7 @@ Boston Homemade Trade
   <a href="Food.jsp">Community</a>
   <a href="contactus.jsp">Contact</a>
   <a href="SignUp.jsp">Join the Community</a>
+  <a href="map.jsp">Map</a>
   </div>
 
 

@@ -108,8 +108,6 @@ Boston Homemade Trade
 </div>
 
 
-
-
 <!-- Button to open the modal login form -->
 <div class="login">
 <button onclick="document.getElementById('id01').style.display='block'">Login</button>
@@ -122,7 +120,7 @@ Boston Homemade Trade
   <!-- Modal Content -->
   <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      <img src="images/BHTB.jpg" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
@@ -147,8 +145,6 @@ Boston Homemade Trade
   </form>
 </div>
 
-<br>
-
 <head>
 
 
@@ -165,7 +161,7 @@ Boston Homemade Trade
       <a href="about.jsp">About us</a>
       <a href="ourteam.jsp">Our team</a>
       <a href="howitworks.jsp">How it works</a>
-	  <a href="faq.html">FAQ</a>
+	  <a href="faq.jsp">FAQ</a>
     </div>
   </div> 
   <a href="Forum.jsp">Forum</a>
@@ -173,6 +169,7 @@ Boston Homemade Trade
   <a href="Food.jsp">Community</a>
   <a href="contactus.jsp">Contact</a>
   <a href="SignUp.jsp">Join the Community</a>
+  <a href="map.jsp">Map</a>
   </div>
 
 <hr>
