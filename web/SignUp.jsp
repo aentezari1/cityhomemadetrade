@@ -71,6 +71,7 @@ hr {
 	padding: 10px;
 	width: 50%;
 	}
+        
 	
 
 </style>
@@ -249,7 +250,23 @@ Boston Homemade Trade
 		  <option value="Dried Fruit and Nuts">Dried Fruit and Nuts</option>
 		</select>
 		
-		<br><br>
+		<br>
+                <br>
+<div class="dietary">
+    
+    <h4>Dietary Restrictions <em>(select all that apply)</em></h4>
+
+<input type="checkbox" name="No Dietary Restriction" value="All Dietary Categories"> No Dietary Restrictions<br>
+<input type="checkbox" name="Dairy Free" value="Dairy Free"> Dairy Free<br>
+<input type="checkbox" name="Nut Free" value="Nut Free"> Nut Free<br>
+<input type="checkbox" name="Peanut Free" value="Peanut Free"> Peanut Free<br>
+<input type="checkbox" name="Vegan Friendly" value="Vegetarian"> Vegan Friendly<br>
+<input type="checkbox" name="Vegetarian Friendly" value="Vegan"> Vegetarian Friendly<br>
+
+
+
+
+</div>	
 		
 		
 	<!--

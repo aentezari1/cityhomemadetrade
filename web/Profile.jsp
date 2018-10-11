@@ -3,11 +3,26 @@
 
 <!doctype html>
 <html>
+    <head>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <link rel="stylesheet" type="text/css" href="bcascade.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Datepicker - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
 
+    </head>
 <style type="text/css">
 
 
@@ -89,6 +104,7 @@ table, th, td {
 }
 </style>
 
+
 <div class="bht">
 Boston Homemade Trade
 </div>
@@ -106,10 +122,6 @@ Boston Homemade Trade
  class="close" title="Close Modal">&times;</span>
  
  <!-- Place Calendar here -->
- 
- 
- 
- 
  
  
 
@@ -142,7 +154,7 @@ Boston Homemade Trade
 </div>
 
 
-
+<br>
 
 <div class="navbar">
   <a href="Boston1.jsp">Home</a>
@@ -168,8 +180,12 @@ Boston Homemade Trade
 
 
 
+
+
 <body>
 
+    
+    
 <!-- Working on the template, hiding for now 
 
 <h2>Trader Profile page</h2>
@@ -305,11 +321,47 @@ Friendliness
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
+    
+    
+    <p>Proposed Trade Date: <br><br><input type="text" id="datepicker"></p>
+
+    <form>
+   <p>Any message you would like to include to homemade trader:</p>
+   
+
+  <textarea rows="4" cols="40">
+  </textarea>
+  </form>
+    <!-- Modal for Calendar -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Modal header</h3>
+  </div>
+  <div class="modal-body">
+    <div id="datetimepicker1" class="input-append date">
+      <input data-format="dd/MM/yyyy hh:mm:ss" type="text"></input>
+      <span class="add-on"><i data-time-icon="icon-time" data-date-icon="icon-calendar"></i></span>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
+    
+  
+</div>
+  
   </div>
 
 </div>
 </div>	
+
+
+
+
+
+
 </body>
 
 
@@ -349,7 +401,10 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
  </script>
+ 
 </html>
 
 

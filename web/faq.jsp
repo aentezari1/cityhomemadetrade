@@ -97,6 +97,10 @@ Boston Homemade Trade
 
 </head>
 
+<body>
+    
+</body>
+
 <br>
 
 <h1>FAQ page</h2>

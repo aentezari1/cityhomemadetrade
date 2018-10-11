@@ -5,7 +5,21 @@
 <html>
 
 <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+          initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>My Google Map</title>
 
+<style>
+ #map {
+        height:400px;
+        width: 100%;
+    }
+    </style>
+
+</head>
 <!-- Does this link have to go within the style tags? -->
 <link rel="stylesheet" type="text/css" href="bcascade.css" />
 
@@ -33,6 +47,13 @@ table, th, tr {
 <!-- still not really understanding how the divs work, I have been changing this 'neighborhood' and 'dietary' div for the past 15 minutes and
 don't. I want them (for now) to be left align from the top, -->	
 	
+
+
+
+    
+
+
+
 </style>
 
 
@@ -109,6 +130,36 @@ Boston Homemade Trade
   <a href="SignUp.jsp">Join the Community</a>
   </div>
   
+
+
+
+
+<!-- Start of Google Map API -->
+
+<h1>My google map</h1>
+<div id= "map"></div>
+
+<script>
+    function initMap (){
+    var options = {
+    zoom: 13,
+    center:{lat:42.3467 , lng:-71.0972 } 
+        
+    }    
+     var map = new
+     google.maps.Map(document.getElementById('map'), options);
+        
+    }
+    
+</script>
+
+ <script async defer 
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3fkKPrzFVa2FbxOR8Gx-bNGNY79lIRgk&callback=initMap">
+        
+        
+ </script>
+
+
 
 		
 </body>

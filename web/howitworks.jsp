@@ -190,7 +190,7 @@ Once users are prompted to <em><strong>“Accept”</strong></em> or <strong><em
 					Anne meet Jacob! Jacob meet Anne! <br>
 					Based on your geo locations here are some suggested meeting 
 					places for trading your homemade goods: {locations equidistant 
-					to both parties (i.e. library, park, post office, grocery store)}. We 
+					to both parties (i.e. library, park, post office, grocery store}. We 
 					suggest a timeline of 5-7 days once trades are accepted, but 
 					whatever date you both decide!<br>
 					<br>
@@ -215,13 +215,14 @@ Once users are prompted to <em><strong>“Accept”</strong></em> or <strong><em
 					<hr>
 Canceling Trade after accepting: Traders will have the ability to cancel a trade after they
 have accepted, however, this will reflect poorly on their profile (i.e. User has canceled [4] trades after initially accepting. 
-<br><br><br>
-// Ratio out a 15 star experience, 14 star experience, 13 start experience, 12 star experience, 11 star experience, 10 star experience, 9 star experience, 8 star experience, etc (with description and detail) //
+<br>
+
+<!--Ratio out a 15 star experience, 14 star experience, 13 start experience, 12 star experience, 11 star experience, 10 star experience, 9 star experience, 8 star experience, etc (with description and detail) //
 	If the user Declines the trade, notification will be sent to the proposer of the trade letting them 
 	know that the other member had decided not to accept the trade at the current moment 
 	(recipients of trade proposals will have the option to leave commentary on why they didn’t 
-	accept the trade). 
-	<br><br><br>
+	accept the trade). -->
+	<br>
 Upon completion of a trade, users will be sent a request to review the quality of the trade between both members. Review measures will be based on trader’s perspective of how the trade went. For example, quality of trade, delivery of trade, friendliness, and any commentary they would like to leave the trader. 
 	Once a trader submits a form reviewing the other party’s trade and food, a notification will be 
 	sent to the other participant asking them to verify that they did in fact have trade with the 
