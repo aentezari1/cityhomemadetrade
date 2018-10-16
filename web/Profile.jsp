@@ -102,6 +102,8 @@ table, th, td {
     text-decoration: none;
     cursor: pointer;
 }
+
+
 </style>
 
 
@@ -291,6 +293,8 @@ Friendliness
 </table>
 
 	</div>
+        
+       
 	
 <table class="ratingtable">
 <tr>	
@@ -323,15 +327,22 @@ Friendliness
     <span class="close">&times;</span>
     
     
-    <p>Proposed Trade Date: <br><br><input type="text" id="datepicker"></p>
-
+    <p>Proposed Trade Date: <br><br><input type="text" id="datepicker"> 
+        
+      
+        <img src="images/calendar.jpg" style="width:20px;height:20px;" valign="bottom"></p>  
+     
     <form>
    <p>Any message you would like to include to homemade trader:</p>
    
-
+   
   <textarea rows="4" cols="40">
   </textarea>
   </form>
+    <br>
+    <button type="submit">Submit</button>
+    
+    
     <!-- Modal for Calendar -->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
@@ -340,7 +351,7 @@ Friendliness
   </div>
   <div class="modal-body">
     <div id="datetimepicker1" class="input-append date">
-      <input data-format="dd/MM/yyyy hh:mm:ss" type="text"></input>
+      <input data-format="dd/MM/yyyy" type="text"></input>
       <span class="add-on"><i data-time-icon="icon-time" data-date-icon="icon-calendar"></i></span>
     </div>
   </div>

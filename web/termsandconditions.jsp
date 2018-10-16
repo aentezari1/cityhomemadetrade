@@ -36,23 +36,23 @@ Boston Homemade Trade
 
 <head>
 <div class="navbar">
-  <a href="Boston1.html">Home</a>
+  <a href="Boston1.jsp">Home</a>
   <div class="dropdown">
     <button class="dropbtn">About
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="about.html">About us</a>
-      <a href="ourteam.html">Our team</a>
-      <a href="howitworks.html">How it works</a>
-	  <a href="faq.html">FAQ</a>
+      <a href="about.jsp">About us</a>
+      <a href="ourteam.jsp">Our team</a>
+      <a href="howitworks.jsp">How it works</a>
+	  <a href="faq.jsp">FAQ</a>
     </div>
   </div> 
-  <a href="Forum.html">Forum</a>
-  <a href="Profile.html">Profile Page</a>
-  <a href="Food.html">Community</a>
-  <a href="contactus.html">Contact</a>
-  <a href="Signup.html">Join the Community</a>
+  <a href="Forum.jsp">Forum</a>
+  <a href="Profile.jsp">Profile Page</a>
+  <a href="Food.jsp">Community</a>
+  <a href="contactus.jsp">Contact</a>
+  <a href="Signup.jsp">Join the Community</a>
   <a href="map.jsp">Map</a>
   
   <!-- Need to go through and make sure all the urls match with the navigation bar designations -->

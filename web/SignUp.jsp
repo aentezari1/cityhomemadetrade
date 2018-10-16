@@ -72,7 +72,31 @@ hr {
 	width: 50%;
 	}
         
-	
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 120%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}	
 
 </style>
 
@@ -162,13 +186,17 @@ Boston Homemade Trade
 	<th style="border:1px solid #ccc">
 	
 	<div class="border4bio">
-	<label for="email"><b>First Name</b></label> <sup><i class="fa fa-info-circle"></i></sup>
+	<label for="email"><b>First Name</b></label> 
+        <div class="tooltip"><sup><i class="fa fa-info-circle"></i></sup><span class="tooltiptext">Tooltip text</span></div>
+        
     <input type="text" placeholder="Enter First Name (i.e. Jane)" name="email" required>
 	
-	 <label for="email"><b>Last Name</b></label> <sup><i class="fa fa-info-circle"></i></sup>
+	 <label for="email"><b>Last Name</b></label> 
+         <div class="tooltip"><sup><i class="fa fa-info-circle"></i></sup><span class="tooltiptext">Tooltip text</span></div>
     <input type="text" placeholder="Enter Last Name (i.e. Erickson)" name="email" required>
 	
-	 <label for="Neighborhood">Neighborhood</label> <sup><i class="fa fa-info-circle"></i></sup>
+	 <label for="Neighborhood">Neighborhood</label> 
+         <div class="tooltip"><sup><i class="fa fa-info-circle"></i></sup><span class="tooltiptext">Tooltip text</span></div>
 	 <br>
     <select id="Neighborhood" name="Neighborhood">
           <option value=" "> </option>
@@ -193,9 +221,11 @@ Boston Homemade Trade
 	
 	
 
-	<label for="email"><b>Email</b></label> <sup><i class="fa fa-info-circle"></i></sup>
+	<label for="email"><b>Email</b></label> 
+        <div class="tooltip"><sup><i class="fa fa-info-circle"></i></sup><span class="tooltiptext">Tooltip text</span></div>
     <input type="text" placeholder="Enter Email (i.e. jane.erickson@gmail.com)" name="email" required>
-		<label for="pictureofself"><b>Upload Picture of Yourself</b></label> <sup><i class="fa fa-info-circle"></i></sup>
+		<label for="pictureofself"><b>Upload Picture of Yourself</b></label> 
+                <div class="tooltip"><sup><i class="fa fa-info-circle"></i></sup><span class="tooltiptext">Tooltip text</span></div>
 	<br><br>
 		<div class="choose_file">
 			<input name="Select File" type="file" />
@@ -206,42 +236,51 @@ Boston Homemade Trade
 
 		<br>
 	<div class="border4bio">
-	<label for="email"><b>Instagram Handle (if applicable) </b></label> <sup><i class="fa fa-info-circle"></i></sup>
+	<label for="email"><b>Instagram Handle (if applicable) </b></label> 
+         <div class="tooltip"><sup><i class="fa fa-info-circle"></i></sup><span class="tooltiptext">Tooltip text</span></div>
     <input type="text" placeholder="Enter Instagram Handle (i.e. @jane_erickson)" name="email">
 	
-    <label for="email"><b>Facebook URL (if applicable)</b></label> <sup><i class="fa fa-info-circle"></i></sup>
+    <label for="email"><b>Facebook URL (if applicable)</b></label> 
+     <div class="tooltip"><sup><i class="fa fa-info-circle"></i></sup><span class="tooltiptext">Tooltip text</span></div>
     <input type="text" placeholder="Enter Facebook Profile URL (i.e. https://www.facebook.com/janeerickson)" name="email">
 	
-	<label for="email"><b>Twitter Handle (if applicable) </b></label> <sup><i class="fa fa-info-circle"></i></sup>
+	<label for="email"><b>Twitter Handle (if applicable) </b></label> 
+          <div class="tooltip"><sup><i class="fa fa-info-circle"></i></sup><span class="tooltiptext">Tooltip text</span></div>  
     <input type="text" placeholder="Enter Twitter Handle Handle (i.e. @jane_erickson)" name="email">
 	
 	</div>
 	<br>
 	<div class="border4bio">
 	
-	<label for="psw"><b>Boston Homemade Trade Username</b></label> <sup><i class="fa fa-info-circle"></i></sup>
+	<label for="psw"><b>Boston Homemade Trade Username</b></label> 
+        <div class="tooltip"><sup><i class="fa fa-info-circle"></i></sup><span class="tooltiptext">Tooltip text</span></div>
     <input type="text" placeholder="Enter Username" name="psw" required>
 	
-    <label for="psw"><b>Password</b></label> <sup><i class="fa fa-info-circle"></i></sup>
+    <label for="psw"><b>Password</b></label> 
+   <div class="tooltip"> <sup><i class="fa fa-info-circle"></i></sup><span class="tooltiptext">Tooltip text</span></div>
     <input type="password" placeholder="Enter Password" name="psw" required>
 
-    <label for="psw-repeat"><b>Repeat Password</b></label> <sup><i class="fa fa-info-circle"></i></sup>
+    <label for="psw-repeat"><b>Repeat Password</b></label> 
+    <div class="tooltip"><sup><i class="fa fa-info-circle"></i></sup><span class="tooltiptext">Tooltip text</span></div>
     <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 	
 	</div>
 	
 	<br>
 	<div class="border4bio">
-	  <label for="FoodTrade"><b>Title of Homemade Trade</b></label> <sup><i class="fa fa-info-circle"></i></sup>
+	  <label for="FoodTrade"><b>Title of Homemade Trade</b></label> 
+          <div class="tooltip"><sup><i class="fa fa-info-circle"></i></sup><span class="tooltiptext">Tooltip text</span></div>
     <input type="text" placeholder="Enter Title of Homemade Trade (i.e. Banana Bread)" name="foodtrade" required>
 	
 	
-	<label for="FoodTrade"><b>Select Food Type</b></label> <sup><i class="fa fa-info-circle"></i></sup>
+	<label for="FoodTrade"><b>Select Food Type</b></label> 
+        <div class="tooltip"><sup><i class="fa fa-info-circle"></i></sup><span class="tooltiptext">Tooltip text</span></div>
 	<br>
 	
 	
 	<select>
-		<option value="Select Type of Food">Select Type of Food</option> <sup><i class="fa fa-info-circle"></i></sup>
+		<option value="Select Type of Food">Select Type of Food</option> 
+                 <div class="tooltip"><sup><i class="fa fa-info-circle"></i></sup><span class="tooltiptext">Tooltip text</span></div>
 		  <option value="Breads">Breads</option>
 		  <option value="Pies and Tarts">Pies and Tarts</option>
 		  <option value="Cookies">Cookies</option>
@@ -254,7 +293,10 @@ Boston Homemade Trade
                 <br>
 <div class="dietary">
     
-    <h4>Dietary Restrictions <em>(select all that apply)</em></h4>
+    <h4>Dietary Restrictions <em>(select all that apply)</em>
+    <div class="tooltip"><sup><i class="fa fa-info-circle"></i></sup><span class="tooltiptext">Tooltip text</span></div>
+    </h4>
+    
 
 <input type="checkbox" name="No Dietary Restriction" value="All Dietary Categories"> No Dietary Restrictions<br>
 <input type="checkbox" name="Dairy Free" value="Dairy Free"> Dairy Free<br>
@@ -286,13 +328,16 @@ Boston Homemade Trade
 	-->
 	
 	<br><br>
-	<label for="pictureoffood"><b>Upload Picture of Homemade Trade</b></label> <sup><i class="fa fa-info-circle"></i></sup>
+	<label for="pictureoffood"><b>Upload Picture of Homemade Trade</b></label> 
+        
+        <div class="tooltip"><sup><i class="fa fa-info-circle"></i></sup><span class="tooltiptext">Tooltip text</span></div>
 	<br><br>
 		<div class="choose_file">
 			<input name="Select File" type="file" />
 		</div>
 	<br><br>
-	  <label for="Ingredients"><b>Ingredients</b></label> <sup><i class="fa fa-info-circle"></i></sup>
+	  <label for="Ingredients"><b>Ingredients</b></label> 
+          <div class="tooltip"><sup><i class="fa fa-info-circle"></i></sup><span class="tooltiptext">Tooltip text</span></div>
     <input type="text" placeholder="Enter Ingredients (i.e. banana, flour, salt, baking soda, etc)" name="foodtrade" required>
     
 	
